@@ -1,2 +1,2 @@
 # MarcoPatierno_DepositoCorsoPython
-Descrizione corso Python
+Descrizione corso Python MODIFICATA
