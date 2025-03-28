@@ -41,6 +41,7 @@ if user_input == 0:
 elif user_input == 1:
     print('Elemento eliminato')
     num.pop()
+    
 # Svuotare lista
 elif user_input == 2:
     print('Lista svuotata')
