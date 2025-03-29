@@ -24,30 +24,35 @@ if username == login[0] and password == login[1]:
                   '2) Qual è il cognome da nubile di tua madre? \n'))
     
     # Scelta risposta segreta
-    match question:
-        case 1:
+    if question == 1:
             secret_question.append('Qual è il tuo colore preferito? \n')
             answer = input('Inserisci la tua risposta segreta: \n').lower()
             print('Risposta salvata! \n')
             secret_question.append(answer)
-        case 2:
+    elif question == 2:
             secret_question.append('Qual è il cognome da nubile di tua madre? \n')
             answer = input('Inserisci la tua risposta segreta: \n').lower()
             print('Risposta salvata! \n')
             secret_question.append(answer)
+    else:
+            print('Opzione non esistente')
+            
             
     # Menu cambio username o password           
     menu = int(input('Che operazione vuoi effettuare? \n'
               '1) Modifica nome utente \n'
               '2) Modifica password \n'))
-    match menu:
-        case 1:
+    if menu == 1:
             new_username = input('Inserisci il nuovo nome utente: \n').lower()
             print('Nome utente modificato con successo! \n')
             login[0] = new_username
-        case 2:
+    elif menu == 2:
             new_password = input('Inserisci la nuova password: \n').lower()
             print('Password modificata con successo! \n')
             login[1] = new_password
+    else:
+            print('Opzione non esistente')
 else:
     print('Credenziali errate, ritenta')
+    
+
