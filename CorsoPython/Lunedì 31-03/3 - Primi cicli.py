@@ -28,3 +28,8 @@ string = 'pippo'
 for letter in string:
     print(letter)
     
+# for in range
+
+for i in range(5, 15, 2):
+    print(i)
+
