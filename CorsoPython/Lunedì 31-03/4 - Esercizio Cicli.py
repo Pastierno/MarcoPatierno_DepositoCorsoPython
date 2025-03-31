@@ -21,11 +21,9 @@ while on:
             elif choose == 2:
                 print('Ciao!')
                 on = False
-                break
             else:
                 print('Opzione non esistente')
                 on = False
-                break
 
         
 
