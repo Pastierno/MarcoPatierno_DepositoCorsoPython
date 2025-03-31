@@ -35,6 +35,8 @@ while control:
 # Controllo lista vuota o stampa numero massimo e lunghezza lista
 if len(num_list) != 0:
     print(f'La lista ha {len(num_list)} elementi e {count} è il numero massimo')
+else:
+    print('La lista è vuota!')
 
     
     
