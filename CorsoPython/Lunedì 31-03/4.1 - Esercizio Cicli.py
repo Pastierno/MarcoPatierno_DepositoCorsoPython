@@ -9,15 +9,19 @@ else:
     
 # Verifica numero primo
 if user_input < 2:
-    print('Il numero non è primo')
-# Calcolo se numero maggiore di due
+    print(f"{user_input} non è primo.")
 else:
     primary = True
+    # Verifica divisore
     for i in range(2, int(user_input ** 0.5) + 1):
         if user_input % i == 0:
             primary = False
-            print('Il numero non è primo')
             break
-        if primary:
-            print(f'{user_input} è primo')
+    
+    # Risultato
+    if primary:
+        print(f"{user_input} è primo.")
+    else:
+        print(f"{user_input} non è primo.")
+
     
