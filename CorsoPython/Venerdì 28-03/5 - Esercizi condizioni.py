@@ -54,7 +54,7 @@ else:
     
 # Terzo esercizio
 
-accounts = []
+account = []
 
 user_input = int(input('Vuoi creare un nuovo account o accedere? (0 creare, 1 accedere)'))
 
@@ -69,7 +69,7 @@ elif user_input == 1:
     email = input('Inserisci email: ')
     password = input('Inserisci password: ')
     account.append([email, password])
-    if account[0] == accounts[0]:
+    if account[0] == account[0]:
         print(f'Accesso effettuato {email}')
 else:
     print('Credenziali errate')    
