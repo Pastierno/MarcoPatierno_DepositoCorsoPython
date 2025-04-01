@@ -8,7 +8,7 @@ check_list = []
 for n in range(num1, num2 + 1):
     if n < 2:
         continue
-    
+    # Controllo numeri primi
     primary = True
     for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
