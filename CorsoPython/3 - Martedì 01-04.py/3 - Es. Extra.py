@@ -28,7 +28,7 @@ while positive:
         print('Errore')
         continue
     else:
-        # Liste vuore per somma e lista numeri dispari e numeri casuali da 1 a n
+        # Liste vuore per somma e lista numeri dispari e numeri casuali da n a n1
         random_list = [rnd.randint(user_input, user_input2) for i in range(user_input, user_input2)]    
         num_sum = []
         num_odd = []
