@@ -23,6 +23,7 @@ def decorator_arg(funzione):
 
 @decorator_arg
 def somma(a, b):
+    print(a+b)
     return a+b
 print(somma(3,4))
 
