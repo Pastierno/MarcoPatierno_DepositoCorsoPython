@@ -59,9 +59,8 @@ def recap():
             # match, case
             case 5:
                 print('\nIstruzione che consente di confrontare il valore di una variabile con diversi \'casi\'')
-                print('Da Python 3.10, usato come uno switch-case di altri linguaggi.')
                 print('Esempio:')
-                print('match variabile:')
+                print('\nmatch variabile:')
                 print('    case \'valore1\':')
                 print('          azione 1')
                 print('    case \'valore2\':')
@@ -82,7 +81,7 @@ def recap():
             # Funzioni
             case 7:
                 print('\n Le funzioni sono blocchi di codice autonomi che possono essere richiamati all\'interno del programma')
-                print('def saluta(nome):')
+                print('\ndef saluta(nome):')
                 print('    print(\'Ciao,\', nome)')
                 print('Le funzioni possono anche essere di ritorno con la parola chiave return.')
 
@@ -90,7 +89,7 @@ def recap():
             case 8:
                 print('\nSono funzioni che modificano il comportamento di altre funzioni, senza alterarne il codice.')
                 print('Esempio:')
-                print('@decoratore')
+                print('\n@decoratore')
                 print('def saluta():')
                 print('    print(\'ciao\')')
                 print('Dove \'decoratore\' è un\'altra funzione che prende e ritorna una funzione wrapper.')
