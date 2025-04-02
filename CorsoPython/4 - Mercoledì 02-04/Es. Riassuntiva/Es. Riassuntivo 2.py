@@ -1,3 +1,4 @@
+# Decoratore che dice quale funzione si sta visualizzando
 def decoratore1(func):
     def wrapper(*args, **kwargs):
         print(f'\nStai visualizzando: {func.__name__}')
@@ -6,6 +7,7 @@ def decoratore1(func):
         return result
     return wrapper
 
+# Decoratore che chiede di ripetere la spiegazione o va avanti
 def decoratore2(func):
 
     def wrapper(*args, **kwargs):
