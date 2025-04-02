@@ -3,7 +3,7 @@ def decorator(func):
         print('Prima della funzione')
         func()
         print('Dopo la funzione')
-    return wrapper # Questo restituisce la funzione decorata
+    return wrapper # QUESTO restituisce la funzione decorata
     
 @decorator
 def saluta():
