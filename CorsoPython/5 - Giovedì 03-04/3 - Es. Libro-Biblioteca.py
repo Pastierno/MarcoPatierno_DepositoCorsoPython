@@ -59,6 +59,7 @@ class Biblioteca:
 
 def menu():
     # Crea istanza
+    b = Biblioteca()
 
     while True:
         print('\nMenù')
