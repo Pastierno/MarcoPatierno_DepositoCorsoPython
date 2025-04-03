@@ -75,7 +75,7 @@ class Ristorante:
             print(f"{piatto}: {prezzo:.2f}")
 
 # funzione principale per il menu del ristorante
-def menu_ristorante(nome, tipo_cucina):
+def menu_ristorante():
     nome = "Fratelli Max 3, FOZZA NAPOLI"
     tipo_cucina = "Napoletana"
     ristorante = Ristorante(nome, tipo_cucina)
@@ -113,4 +113,4 @@ def menu_ristorante(nome, tipo_cucina):
                 break
             case _:
                 print("Scelta non valida.")
-menu_ristorante('Ciao', 'Gente')
+menu_ristorante()
