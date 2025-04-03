@@ -5,4 +5,8 @@ class Libro():
         self.pagine = pagine
         
     def descrizione(self):
-        print(f'Il libro {self.titolo} di {self.autore} ha {self.pagine}')
+        print(f'Il libro {self.titolo} di {self.autore} ha {self.pagine} pagine.')
+        
+l1 = Libro('Harry Potter', 'J.K. Rowling', 500)
+
+l1.descrizione()
