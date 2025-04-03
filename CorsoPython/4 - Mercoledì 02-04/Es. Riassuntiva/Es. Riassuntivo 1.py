@@ -49,7 +49,7 @@ def recap():
             case 4:
                 print('\nIstruzioni per eseguire un blocco di codice se una condizione è verificata')
                 print('Esempio di struttura:')
-                print('if condizione1:')
+                print('\nif condizione1:')
                 print('      codice1')
                 print('elif condizione2:')
                 print('      codice2')
