@@ -16,7 +16,7 @@ class Prodotto():
         profitto = self.prezzo - self.costo_produzione
         return profitto
         
-class Fabbrica:
+class Fabbrica():
     def __init__(self, prodotti={}): # Costruttore fabbrica
         self.prodotti = prodotti
 
