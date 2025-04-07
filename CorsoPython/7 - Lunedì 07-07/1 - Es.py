@@ -1,11 +1,11 @@
 
-user_input = input('Inserisci una stringa: ')
+# user_input = input('Inserisci una stringa: ')
 
 # lista = list(''.join(user_input)) # Crea lista con caratteri singoli
 
 # chiavi = set(lista) # set per prendere solo le chiavi
 
-dizionario = {} # dict vuoto
+# dizionario = {} # dict vuoto
 
 # for c in chiavi:
 #     dizionario[c] = lista.count(c) # Per ogni carattere nelle chiavi, aggiunge al dizionario con chiave il carattere il conto
@@ -26,7 +26,17 @@ dizionario = {} # dict vuoto
 
 # #________________
 
-for l in user_input:
-    dizionario[l] = user_input.count(l)
+# for l in user_input:
+#     dizionario[l] = user_input.count(l)
     
-print(dizionario)
+# print(dizionario)
+
+#_____________
+stringa = "banana"
+lista = list(stringa)
+dizi = {}
+
+for i in lista:
+    dizi.setdefault(i, lista.count(i))
+
+print(dizi)
