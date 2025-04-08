@@ -6,6 +6,7 @@ def is_pal(a): # Funzione che verifica se l'argomento è palindromo
 
 def pulisci_stringa(stringa): # Pulisce la stringa da caratteri speciali e spazi
     return ''.join(c for c in stringa if c.isalnum())
+    #return ''.join(filter(stringa.isalpha, ch))
 
 
 user_input = input('Inserisci una parola o una frase: ') # Input utente in minuscolo
