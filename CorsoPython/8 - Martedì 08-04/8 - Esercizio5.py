@@ -6,7 +6,7 @@
 # degli alunni e i loro voti e medie, se si vuole aggiungere un
 # alunno con i voti
 
-db = 'registro.txt' # Variabile con path file registro
+db = 'registro.csv' # Variabile con path file registro
 
 def carica_dati(database): # Per caricare un dizionario con dati del file
     dati = {}
@@ -16,7 +16,7 @@ def carica_dati(database): # Per caricare un dizionario con dati del file
     except:
         print('Registro non trovato')
         with open(database, 'w') as file:
-            file.write('nome,voti')
+            file.write('nome,voti') # crea file ed intestazione in caso di file non presente
         return {}
     
             
@@ -91,13 +91,13 @@ def aggiungi_alunno(database):
     dati[nome] = lista_voti
     scrivi_registro(database, dati) 
 
-def elimina_alunno(database):
+def elimina_alunno(database): # Eliminare un alunno
     dati = carica_dati(database)
     nome = input("\nInserisci il nome dell'alunno da eliminare: ").strip()
     
-    if nome in dati:
+    if nome in dati: # se è presente nel dizionario lo elimina
         del dati[nome]
-        scrivi_registro(database, dati)
+        scrivi_registro(database, dati) # aggiorna il registro
         print(f'Alunno {nome} eliminato.')
     else:
         print(f'Alunno {nome} non trovato.')
@@ -144,7 +144,7 @@ def menu():
         print("4) Modifica alunno")
         print("5) Esci")
 
-        scelta = input("\nScegli un'opzione (1/2/3/4): ").strip()
+        scelta = input("\nScegli un'opzione (1/2/3/4/5): ").strip()
         if scelta == '1':
             apri_registro(db)
         elif scelta == '2':
