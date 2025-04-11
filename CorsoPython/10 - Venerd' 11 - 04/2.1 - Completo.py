@@ -33,6 +33,7 @@ def aggiungi_studente(my_cursor, table):
     print(f"{nome.upper()} {cognome.upper()} aggiunto.")
     
 def elimina_studente(my_cursor, table):
+    
     while True:
         nome = input('\nInserisci il nome dell\'alunno: ').strip()
         cognome = input('\nInserisci il cognome dell\'alunno: ').strip()
@@ -75,7 +76,7 @@ def crea_tabella_voti():
         MATRICOLA INT,
         ESAME VARCHAR(50) NOT NULL,
         VOTO INT NOT NULL,
-        FOREIGN KEY (MATRICOLA) REFERENCES STUDENTI(MATRICOLA)
+        FOREIGN KEY  (MATRICOLA)REFERENCES STUDENTI(MATRICOLA)
     )"""
     mycursor.execute(query)
     print("Tabella VOTI pronta.")    
