@@ -138,21 +138,24 @@ def menu():
         print("6. Visualizza media")
         print("7. Esci")
 
-        scelta = input("Scegli un'opzione (1-6): ")
+        scelta = int(input("Scegli un'opzione (1-7): "))
 
         match scelta:
-            case "1":
+            case 1:
                 aggiungi_studente(mycursor, "STUDENTI")
-            case "2":
+            case 2:
                 elimina_studente(mycursor, "STUDENTI")
-            case "3":
+            case 3:
                 visualizza_studenti(mycursor, "STUDENTI")
-            case "4":
+            case 4:
                 aggiungi_voto(mycursor, "VOTI")
-            case "5":
+            case 5:
                 visualizza_voti(mycursor)
-            case "6":
+            case 6:
                 media(mycursor, 'VOTI')
+            case 7:
+                print('Ciao!')
+                break
             case _:
                 print("Scelta non valida. Riprova.")
 
