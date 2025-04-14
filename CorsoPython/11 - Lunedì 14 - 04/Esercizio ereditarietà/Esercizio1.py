@@ -1,4 +1,4 @@
-class Animale():
+class Animale(): # Classe padre
     def __init__(self, nome, eta):
         self.nome = nome
         self.eta = eta
@@ -35,7 +35,7 @@ class Rinoceronte(Animale):
         self.peso = peso  # Attributo aggiunto, peso
 
     def fai_suono(self):
-        print("'Boh'")
+        print("'Tipo grugniti e soffi'")
 
     def carica(self):
         print(f"{self.nome}, dal peso di {self.peso} tonnellate, carica.")
