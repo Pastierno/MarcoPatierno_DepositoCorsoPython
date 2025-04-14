@@ -2,7 +2,7 @@ import class_Libreria as cl
 import class_Libro as cb
 
 def menu():
-    Libreria1 = cl.Libreria()
+    Libreria1 = cl.Libreria() # Istanzxa Libreria
     while True:
         print("Benvenuto nella libreria")
         print("1. Aggiungi Libro")
@@ -10,7 +10,7 @@ def menu():
         print("3. Cerca Libro per Titolo")
         print("4. Mostra Catalogo")
         print("5. Esci")
-        scelta = input("Scegli un'opzione: ").strip()
+        scelta = input("Scegli un'opzione: ").strip() # Scelta utente
         
         if scelta == "1":
             Libreria1.aggiungi_libro()
