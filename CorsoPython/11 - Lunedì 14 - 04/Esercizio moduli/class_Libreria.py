@@ -1,10 +1,15 @@
+import class_Libro as cb
 class Libreria():
     def __init__(self):
         self.catalogo = [] # Catalogo di libri
     
-    def aggiungi_libro(self, libro): # Metodo per aggiungere libri
-        self.catalogo.append(libro)
-        print(f"{libro} aggiunto alla libreria")
+    def aggiungi_libro(self): # Metodo per aggiungere libri
+        titolo = input("Inserisci il titolo: ").strip()
+        autore = input("Inserisci l'autore: ").strip()
+        isbn = input("Inserisci il codice ISBN: ").strip()
+        nuovo_libro = cb.Libro(titolo, autore, isbn)
+        self.catalogo.append(nuovo_libro)
+        print(f"{nuovo_libro.titolo} aggiunto alla libreria")
         
     def elimina_libro(self): # Eliminare dal catalogo il libro in base all'ISBN
         isbn = int(input("Inserisci il codice ISBN: "))
