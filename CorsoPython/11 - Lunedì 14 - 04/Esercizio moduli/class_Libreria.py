@@ -20,14 +20,14 @@ class Libreria():
                 return
             print("Libro non trovato.")
             
-    def cerca_per_titolo(self):
+    def cerca_per_titolo(self): # Cerca in base al titolo inserito
         titolo = input("Inserisci il titolo: ").strip()
         for libro in self.catalogo:
             if libro.titolo.lower() == titolo.lower():
                 return libro
             print("Libro nono trovato.")
     
-    def mostra_catalogo(self):
+    def mostra_catalogo(self): # Stampa libri presenti nel catalogo
         if len(self.catalogo) == 0:
             print("Libreria vuota.")
         else:

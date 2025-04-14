@@ -3,8 +3,8 @@ import class_Libro as cb
 
 def menu():
     Libreria1 = cl.Libreria() # Istanzxa Libreria
+    print("Benvenuto nella libreria")
     while True:
-        print("Benvenuto nella libreria")
         print("1. Aggiungi Libro")
         print("2. Elimina Libro")
         print("3. Cerca Libro per Titolo")
