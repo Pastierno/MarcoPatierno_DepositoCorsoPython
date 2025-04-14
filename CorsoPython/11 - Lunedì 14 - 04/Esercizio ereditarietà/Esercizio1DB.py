@@ -5,12 +5,12 @@ def crea_tabella(conn):
     cur = conn.cursor()
     cur.execute('''
     CREATE TABLE IF NOT EXISTS Animali (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nome TEXT NOT NULL,
-        eta INTEGER NOT NULL,
-        tipo TEXT NOT NULL,
-        velocita REAL,
-        peso REAL
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        NOME TEXT NOT NULL,
+        ETA INTEGER NOT NULL,
+        TIPO TEXT NOT NULL,
+        VELOCITA REAL,
+        PESO REAL
     )
     ''')
     conn.commit()
@@ -28,7 +28,7 @@ class Animale:
         # Metodo base per salvare i dati comuni.
         cur = conn.cursor()
         cur.execute('''
-            INSERT INTO Animali (nome, eta, tipo)
+            INSERT INTO Animali (NOME, ETA, TIPO)
             VALUES (?, ?, ?)
         ''', (self.nome, self.eta, self.__class__.__name__))
         conn.commit()
@@ -48,7 +48,7 @@ class Capibara(Animale):
     def salva_in_db(self, conn):
         cur = conn.cursor()
         cur.execute('''
-            INSERT INTO Animali (nome, eta, tipo)
+            INSERT INTO Animali (NOME, ETA, TIPO)
             VALUES (?, ?, ?)
         ''', (self.nome, self.eta, "Capibara"))
         conn.commit()
@@ -68,7 +68,7 @@ class Ermellino(Animale):
     def salva_in_db(self, conn):
         cur = conn.cursor()
         cur.execute('''
-            INSERT INTO Animali (nome, eta, tipo, velocita)
+            INSERT INTO Animali (NOME, ETA, TIPO, VELOCITA)
             VALUES (?, ?, ?, ?)
         ''', (self.nome, self.eta, "Ermellino", self.velocita))
         conn.commit()
@@ -88,7 +88,7 @@ class Rinoceronte(Animale):
     def salva_in_db(self, conn):
         cur = conn.cursor()
         cur.execute('''
-            INSERT INTO Animali (nome, eta, tipo, peso)
+            INSERT INTO Animali (NOME, ETA, TIPO, PESO)
             VALUES (?, ?, ?, ?)
         ''', (self.nome, self.eta, "Rinoceronte", self.peso))
         conn.commit()
