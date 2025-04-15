@@ -1,5 +1,6 @@
 from class_ba import BankAccount
 import sqlite3
+
 def menu():
     conn = sqlite3.connect('bank.db') # Connessione al database SQLite
     cursor = conn.cursor()
