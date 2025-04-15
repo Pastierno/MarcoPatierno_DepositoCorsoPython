@@ -170,13 +170,14 @@ def partita():
         punteggio_totale1 = sum([giocatore[6] for giocatore in squadra1 if giocatore[6] is not None]) 
         punteggio_totale2 =  sum([giocatore[6] for giocatore in squadra2 if giocatore[6] is not None])
     
-    print(f"Punteggio totale di {squadra1}: {punteggio_totale1}")
-    print(f"Punteggio totale di {squadra2}: {punteggio_totale2}")
+    print(f"Punteggio totale di della prima squadra: {punteggio_totale1}")
+    print(f"Punteggio totale di della seconda squadra: {punteggio_totale2}")
     
     # Simulazione della partita
     tentativi_attacco = 15
     gol1 = 0
     gol2 = 0
+    
     
     for i in range(tentativi_attacco):
         if punteggio_totale1 + punteggio_totale2 > 0: # controllo per evitare divisione per zero
