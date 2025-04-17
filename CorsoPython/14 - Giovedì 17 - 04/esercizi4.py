@@ -1,6 +1,5 @@
 import numpy as np
 
-# crea un array di 12 numeri equidistanti tra 0 e 1
 def menu():
     arr = None # inizializza l'array a None
     

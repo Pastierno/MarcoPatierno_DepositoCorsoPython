@@ -20,3 +20,29 @@ arr.argsort() # [0 1 2 3 4] ossia gli indici ordinati
 np.arange
 # np.arange(0, 10, 2) # [0 2 4 6 8]
 np.reshape(arr, (5, 1)) # [[1] [2] [3] [4] [5]]
+
+
+# Operazioni aritmetiche:
+np.add()
+np.subtract()
+np.multiply()
+np.divide()
+np.power()
+np.remainder() # resto della divisione
+np.floordiv() # divisione intera
+np.mod() # modulo
+np.divmod() # divisione e resto
+
+# Funzioni matematiche:
+np.sin()
+np.cos()
+np.tan()
+np.arcsin()
+np.arccos()
+np.exp()
+
+# Funzioni statistiche:
+np.mean()
+np.median()
+np.std()
+np.var()
