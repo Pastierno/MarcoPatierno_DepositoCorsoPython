@@ -9,7 +9,7 @@ fancy_index = matrix2[[0, 1, 2, 3], [1, 3, 2, 0]]
 print(fancy_index)
 
 # fancy indexing per selezionare righe dispari
-fancy_index = matrix2[1::2, :]
+fancy_index = matrix2[0::2, :]
 print(fancy_index)
 
 # elementi selezionai nel primo punto + 10
