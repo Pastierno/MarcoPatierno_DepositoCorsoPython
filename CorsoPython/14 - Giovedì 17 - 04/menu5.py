@@ -1,5 +1,5 @@
 import numpy as np
-from esercizi5 import Array
+from esercizio5 import Array
 
 def menu():
     arr = None # inizializza l'array a None
