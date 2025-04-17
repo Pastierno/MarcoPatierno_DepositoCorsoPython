@@ -13,7 +13,7 @@ print("Sottomatrice centrale:\n", matrice_centrale)
 matrice_invertita = matrice_centrale[::-1]
 print("Matrice invertita:\n", matrice_invertita)
 
-# estrai la diagonale principaòe invertita e crea un array 1d contenente questi elementi
+# estrai la diagonale principale invertita e crea un array 1d contenente questi elementi
 diagon= np.diag(matrice_invertita)
 print("Diagonale principale invertita:\n", diagon)
 
