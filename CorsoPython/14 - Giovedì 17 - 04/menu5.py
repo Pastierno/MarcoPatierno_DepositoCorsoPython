@@ -1,7 +1,16 @@
 import numpy as np
 from esercizio5 import Array
+import sqlite3
 
 def menu():
+    conn = sqlite3.connect('array.db')
+    cursor = conn.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS array_data
+                      (id INTEGER PRIMARY KEY AUTOINCREMENT,
+                       array_linspace TEXT,
+                       array_random TEXT,
+                       array_sum TEXT)''')
+    conn.commit()
     arr = None # inizializza l'array a None
     print("Benvenuto")
     while True:
@@ -22,7 +31,20 @@ def menu():
                 print("Il valore di partenza deve essere minore del valore di arrivo.")
                 return
             arr = Array(start, stop, size) # istanza della classe Array
-            print("Array creato.")        
+            print("Array creato.")
+            
+            load = input("Vuoi caricare gli array nel database? (s/n) ").strip().lower() # caricamento nel database
+            if load == "s":
+                cursor.execute("INSERT INTO array_data (array_linspace, array_random, array_sum) VALUES (?, ?, ?)",
+                               (arr.linspace.tolist(), arr.random.tolist(), arr.sum.tolist()))
+                conn.commit()
+                print("Array caricati nel database.")
+            elif load == "n":
+                print("Array non caricati nel database.")
+            else:
+                print("Opzione non valida.")
+                continue
+                       
             
         elif choice == 2 and arr is not None:
             arr.show_array()
