@@ -27,9 +27,9 @@ Qui troverai esempi, esercizi, database di supporto e diagrammi UML, per accompa
 - Ambiente virtuale (consigliato `venv` o [Conda](https://docs.conda.io/))  
 - Librerie principali:
   ```bash
-  pip install numpy pandas scikit-learn matplotlib jupyter
+   pip install numpy pandas scikit-learn matplotlib jupyter
 
-  # 1. Clona il repository
+# 1. Clona il repository
 git clone https://github.com/Pastierno/MarcoPatierno_DepositoCorsoPython.git
 cd MarcoPatierno_DepositoCorsoPython
 
