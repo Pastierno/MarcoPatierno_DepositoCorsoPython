@@ -36,7 +36,7 @@ def menu():
             load = input("Vuoi caricare gli array nel database? (s/n) ").strip().lower() # caricamento nel database
             if load == "s":
                 cursor.execute("INSERT INTO array_data (array_linspace, array_random, array_sum) VALUES (?, ?, ?)",
-                               (arr.linspace.tolist(), arr.random.tolist(), arr.sum.tolist()))
+                               (arr.linspace, arr.random, arr.sum))
                 conn.commit()
                 print("Array caricati nel database.")
             elif load == "n":

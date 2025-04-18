@@ -46,3 +46,26 @@ np.mean()
 np.median()
 np.std()
 np.var()
+
+# Prodotto maticiale:
+np.dot()
+# se entrambi gli array sono 2D, fa il prodotto matriciale
+# se uno è 1D e l'altro è 2D, fa il prodotto tra il vettore e la matrice
+# se entrambi sono 1D, fa il prodotto scalare
+
+np.matmul() # fa il prodotto matriciale in broadcasting (ovvero modifica le dimensioni degli array per fare il prodotto)
+# se entrambi gli array sono 2D, fa il prodotto matriciale
+# se uno è 1D e l'altro è 2D, fa il prodotto tra il vettore e la matrice
+# se entrambi sono 1D, fa il prodotto scalare
+
+# determinante: misura quanto allarga o schiaccia uno spazio di trasformazione lineare
+np.linalg.det() # calcola il determinante di una matrice
+# se il determinante è 0, la matrice non è invertibile
+
+# autovalori e autovettori: sono i valori e i vettori che non cambiano direzione quando vengono moltiplicati per la matrice
+np.linalg.eig() # calcola gli autovalori e gli autovettori di una matriceù
+
+# Risopluzione di sistemi lineari:
+# Ax = b
+# A è la matrice dei coefficienti, x è il vettore delle incognite, b è il vettore dei termini noti
+np.linalg.solve() # risolve il sistema lineare Ax = b senza calcolare l'inversa di A
