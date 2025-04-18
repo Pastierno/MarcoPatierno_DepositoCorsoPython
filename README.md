@@ -35,10 +35,12 @@ cd MarcoPatierno_DepositoCorsoPython
 
 # 2. Crea e attiva un ambiente virtuale
 python3 -m venv env
+
 # macOS/Linux
 source env/bin/activate
+
 # Windows
-# env\Scripts\activate
+env\Scripts\activate
 
 # 3. Installa le dipendenze
 pip install numpy pandas scikit-learn matplotlib jupyter
