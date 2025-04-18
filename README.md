@@ -5,10 +5,6 @@ Qui troverai esempi, esercizi, database di supporto e diagrammi UML, per accompa
 
 ---
 
-## 📁 Struttura del repository
-
-/ ├── CorsoPython/ # Lezioni in ordine cronologico │ ├── 1 - Venerdì 28-03/ # Introduzione, variabili, condizioni… │ ├── 2 - Lunedì 31-03/ # Cicli, funzioni di base… │ ├── 3 - Martedì 01-04/ # Operazioni su file, eccezioni… │ ├── 4 - Mercoledì 02-04/ # Strutture dati fondamentali… │ ├── 5 - Giovedì 03-04/ # Programmazione strutturata… │ ├── 6 - Venerdì 04-04/ # OOP e modelli UML… │ ├── 7 - Lunedì 07-04/ # Introduzione a NumPy… │ ├── 8 - Martedì 08-04/ # Pandas e DataFrame… │ ├── 9 - Giovedì 10-04/ # Scikit-Learn: modelli base… │ ├── 10 - Venerdì 11-04/ # Preprocessing e pipeline… │ ├── 11 - Lunedì 14-04/ # Progetto DB & SQLite… │ ├── 12 - Martedì 15-04/ # Visualizzazione grafica… │ ├── 13 - Mercoledì 16-04/ # Nozioni di statistica… │ └── 14 - Giovedì 17-04/ # Progetti pratici finali… ├── Modelli UML/ # Diagrammi UML per OOP e casi di studio ├── metodi_numpy.py # Nugget di funzioni utili per NumPy ├── *.db # Database SQLite di esempio per esercizi └── README.md # ← questo file
-
 
 ---
 
