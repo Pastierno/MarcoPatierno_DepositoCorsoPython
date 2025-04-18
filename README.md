@@ -1,6 +1,6 @@
 # Marco Patierno – Deposito Corso Python 🐍
 
-Benvenuto nella repository che raccoglie tutte le lezioni del corso di **Python e Machine Learning** tenuto da Marco Patierno! 🎓  
+Benvenuto nella repository che raccoglie tutte le lezioni del corso di **Python e Machine Learning**! 🎓  
 Qui troverai esempi, esercizi, database di supporto e diagrammi UML, per accompagnarti in un percorso che va dalle basi del linguaggio fino a progetti pratici di Data Science e Machine Learning. Prendi confidenza, sperimenta e non aver paura di sbagliare: ogni errore è un passo avanti!
 
 ---
