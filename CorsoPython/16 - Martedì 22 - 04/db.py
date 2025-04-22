@@ -1,5 +1,5 @@
 import mysql.connector as sq
-
+# Extra, aggiungo tabella con nomi di stati nel mondo per far scegliere all'utente come collegarli alla tabella
 # Connessione globale al database
 db = None
 cursor = None
@@ -42,6 +42,11 @@ def create_table():
         FOREIGN KEY (id_cliente) REFERENCES clienti(id_cliente),
         FOREIGN KEY (id_prodotto) REFERENCES prodotti(id_prodotto)
     )""")
+    cursor.execute("""CREATE TABLE IF NOT EXISTS stati (
+        id_stato INT AUTO_INCREMENT PRIMARY KEY,
+        nome VARCHAR(100)
+    )""")
+    
     db.commit()
 
 def close_connection():

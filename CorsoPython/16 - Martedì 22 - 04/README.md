@@ -87,6 +87,28 @@ Permette di eseguire diverse operazioni statistiche:
 
 Su diverse tabelle e colonne a scelta dell'utente.
 
+### 5. Gestione stati (implementazione didattica)
+Questa funzionalità è stata implementata principalmente come esempio didattico per dimostrare tecniche di alterazione di tabelle esistenti e implementazione di relazioni in un database MySQL:
+
+- **Creazione tabella stati**: Creazione di una tabella ausiliaria contenente nomi di stati/nazioni
+- **Modifica di tabelle esistenti**: Aggiunta di campi `id_stato` con vincoli di chiave esterna a tabelle già popolate
+- **Criteri di assegnazione diversificati** per ogni tabella:
+  - Per **clienti**: casuale, per regione geografica, o per fascia d'età
+  - Per **prodotti**: casuale, per categoria merceologica, o per fascia di prezzo
+  - Per **vendite**: casuale, cronologica, per importo, o ereditata dal cliente
+
+#### Aspetti didattici della funzionalità
+Questa implementazione non è tanto finalizzata all'utilità pratica quanto a dimostrare:
+
+1. **Alterazione di schema DB**: utilizzo di `ALTER TABLE` per modificare tabelle esistenti
+2. **Normalizzazione**: separazione dei dati in tabelle relazionate per minimizzare la ridondanza
+3. **Vincoli di integrità referenziale**: implementazione di `FOREIGN KEY` per mantenere coerenza tra tabelle
+4. **Query complesse**: utilizzo di `JOIN` e `UPDATE` condizionali
+5. **Gestione delle eccezioni**: verifica dell'esistenza di colonne prima di tentare modifiche
+6. **Algoritmi di distribuzione**: metodi di mapping tra insiemi di dati basati su criteri specifici
+
+Questa sezione del progetto è particolarmente utile per comprendere come modificare lo schema di un database in produzione senza perdere i dati esistenti, un'operazione comune in scenari reali di sviluppo e manutenzione di database.
+
 ## Esempio di utilizzo
 1. Genera 100 clienti casuali
 2. Crea 50 prodotti con prezzi tra €10 e €500
