@@ -11,7 +11,6 @@ print(df.tail())
 
 # Calcolare statistiche descrittive
 print(df.describe())
-print(df.info())
 
 # Gestire i valori nulli
 print(df.isnull().sum())
@@ -41,3 +40,5 @@ df["Salario"] = df["Salario"].astype(int)
 # Aggiungo colonna categoria età
 df["Categoria Età"] = pd.cut(df["Età"], bins=[0, 18, 35, 50, 100], labels=["Infante", "Giovane", "Adulto", "Anziano"])
 print(df)
+
+print(df.describe())
