@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 df = pd.read_csv("CorsoPython/16 - Martedì 22 - 04/pandas/data.csv")
 
@@ -38,7 +37,7 @@ df["Salario"] = df["Salario"].astype(int)
 #print(df)
 
 # Aggiungo colonna categoria età
-df["Categoria Età"] = pd.cut(df["Età"], bins=[0, 18, 35, 50, 100], labels=["Infante", "Giovane", "Adulto", "Anziano"])
+df["Categoria Età"] = pd.cut(df["Età"], bins=[0, 18, 65, 100], labels=["Giovane", "Adulto", "Senior"])
 print(df)
 
 print(df.describe())
