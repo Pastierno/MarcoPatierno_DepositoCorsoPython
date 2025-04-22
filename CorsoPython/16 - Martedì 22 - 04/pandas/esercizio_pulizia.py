@@ -41,3 +41,4 @@ df["Categoria Età"] = pd.cut(df["Età"], bins=[0, 18, 65, 100], labels=["Giovan
 print(df)
 
 print(df.describe())
+
