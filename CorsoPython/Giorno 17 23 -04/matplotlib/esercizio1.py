@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
-import numpy as np
 
 # Genero dati di temperatura giornaliera per un mese in modo casuale ma realistico
 # Temperature tra 15 e 30 gradi con piccole variazioni giornaliere
@@ -33,7 +32,7 @@ def menu():
         
         if choice == '1':
             plt.figure(figsize=(10, 5))
-            plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='red')
+            plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='green')
             plt.title('Temperatura Giornaliera')
             plt.xlabel('Giorno')
             plt.ylabel('Temperatura (°C)')
@@ -51,7 +50,7 @@ def menu():
             
             # Grafico con evidenziati massimo e minimo
             plt.figure(figsize=(10, 5))
-            plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='#3498db')
+            plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='green')
             
             # Evidenzio il massimo con un punto rosso più grande
             plt.scatter(max_day, max_temp, color='red', s=100, label=f'Max: {max_temp}°C')
@@ -85,7 +84,7 @@ def menu():
             
             # Grafico semplice con linea della media
             plt.figure(figsize=(10, 5))
-            plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='#3498db')
+            plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='green')
             
             # Aggiungo linea orizzontale per la media
             plt.axhline(y=mean_temp, color='red', linestyle='--', label=f'Media: {mean_temp:.2f}°C')
