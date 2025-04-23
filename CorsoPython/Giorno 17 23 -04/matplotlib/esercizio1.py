@@ -2,8 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import random
 
+plt.figure(figsize=(10, 5))
+
 # Genero dati di temperatura giornaliera per un mese in modo casuale ma realistico
 # Temperature tra 15 e 30 gradi con piccole variazioni giornaliere
+
 temps = []
 current_temp = random.uniform(20, 25)  # Temperatura iniziale casuale
 
@@ -31,7 +34,6 @@ def menu():
         choice = input("Scegli un'opzione: ")
         
         if choice == '1':
-            plt.figure(figsize=(10, 5))
             plt.plot(df['Giorno'], df['Temperatura'], marker='o', color='green')
             plt.title('Temperatura Giornaliera')
             plt.xlabel('Giorno')
