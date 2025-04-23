@@ -83,16 +83,16 @@ def add_range_column(df):
         # Validazione input
         if range_min >= range_max:
             print("Il minimo deve essere inferiore al massimo. Uso valori predefiniti.")
-            range_min = min_val + (max_val - min_val) * 0.3  # 30% del range
-            range_max = min_val + (max_val - min_val) * 0.7  # 70% del range
+            range_min = min_val + (max_val - min_val) * 0.3  
+            range_max = min_val + (max_val - min_val) * 0.7  
     except:
         print("Input non valido. Uso valori predefiniti.")
-        range_min = min_val + (max_val - min_val) * 0.3  # 30% del range
-        range_max = min_val + (max_val - min_val) * 0.7  # 70% del range
+        range_min = min_val + (max_val - min_val) * 0.3 
+        range_max = min_val + (max_val - min_val) * 0.7 
     
     # Crea una nuova colonna che indica se il valore è nel range specificato
     range_col_name = f"{selected_var}_in_range"
-    df[range_col_name] = (df[selected_var] >= range_min) & (df[selected_var] <= range_max)
+    df[range_col_name] = (df[selected_var] >= range_min) & (df[selected_var] <= range_max) 
     
     # Crea una colonna categorica per il range
     range_cat_name = f"{selected_var}_categoria"
@@ -297,5 +297,4 @@ def main():
         else:
             print("Opzione non valida. Riprova.")
 
-if __name__ == "__main__":
-    main()
+main()
