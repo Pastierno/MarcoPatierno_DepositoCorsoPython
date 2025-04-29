@@ -1,8 +1,9 @@
 from sklearn.datasets import load_wine
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import StratifiedKFold, train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
 
 data = load_wine()
 X = data.data
@@ -39,3 +40,10 @@ wine1 = [[13.5, 2.5, 2.0, 20.0, 100.0, 2.5, 2.0, 0.5, 1.0, 3.0, 1.0, 3.0, 800]]
 y_pred1 = clf.predict(scaler.transform(wine1))
 
 print("Predizione:", y_pred1)
+
+param_grid = {"max_depth" : [3, 5, 7], "criterion" : ["gini", "entropy"]}
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+grid_search = GridSearchCV(DecisionTreeClassifier(), param_grid, cv = cv)
+grid_search.fit(X_train, y_train)
+
+print(f"Best params: {grid_search.best_params_}")
