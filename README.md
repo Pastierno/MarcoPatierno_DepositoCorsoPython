@@ -40,17 +40,20 @@ MarcoPatierno_DepositoCorsoPython/
 ## 🗂 Percorso delle ESERCITAZIONI
 
 1. **Analisi Dati Clienti**  
-   `CorsoPython/Giorno 17 23 -04/ESERCITAZIONE telecomunicazioni/README.md`  
+   `CorsoPython/Giorno 17 23-04/ESERCITAZIONE telecomunicazioni/README.md`  
    Contiene uno script interattivo per caricare, pulire e analizzare un dataset di clienti con tecniche statistiche e di machine learning. citeturn8view0turn10view0
 
 2. **Sistema di Analisi Vendite**  
-   `CorsoPython/Giorno 17 23 -04/ESERCITAZIONE vendite/README.md`  
+   `CorsoPython/Giorno 17 23-04/ESERCITAZIONE vendite/README.md`  
    Un’applicazione OOP in Python per generare, analizzare e riportare dati di vendita. Include menu CLI, generazione CSV e reportistica avanzata. citeturn8view0turn11view0
 
 3. **Data Visualizer CLI**  
-   `CorsoPython/Giorno 17 23 -04/ESERCITAZIONE visualizzazione/README.md`  
+   `CorsoPython/Giorno 17 23-04/ESERCITAZIONE visualizzazione/README.md`  
    Uno strumento da linea di comando per esplorare un dataset sintetico (altezza, peso, età, sesso), creare grafici interattivi e applicare filtri personalizzati. citeturn8view0turn12view0
 
+4. **Machine Learning**
+   `CorsoPython/Giorno 21 05-05/README.md`
+   Analisi esplorativa del dataset cause_deaths, modellazione dei dati e addestramento di modelli predittivi.
 ---
 
 ## 🚀 Come iniziare
