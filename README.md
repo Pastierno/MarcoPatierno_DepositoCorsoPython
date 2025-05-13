@@ -6,6 +6,9 @@ Benvenuto nella repository che raccoglie tutte le lezioni, gli esempi e le eserc
 - Codice sorgente delle lezioni giorno per giorno
 - Database di supporto
 - ESERCITAZIONI complete con README e script interattivi
+---
+
+**Qui il progetto finale:** [BeFirstKC](https://github.com/Pastierno/BeFirstKC---GUI-for-Kaggle-Dataset) una GUI per le Kaggle Competition
 
 ---
 
@@ -32,7 +35,9 @@ MarcoPatierno_DepositoCorsoPython/
         │   └── README.md  
         ├── matplotlib/  
         ├── pandas/  
-        └── seaborn/  
+        └── seaborn/
+   └── Giorno 20 30-04/
+      └── Machine Learning
 ```
 
 ---
